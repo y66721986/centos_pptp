@@ -49,7 +49,7 @@ then
   exit 0
 fi
 
-#apt-get update
+yum update
 
 yum -y install pptpd || {
   echo "Could not install pptpd" 
