@@ -49,7 +49,7 @@ then
   exit 0
 fi
 
-yum update
+yum -y update
 
 yum -y install pptpd || {
   echo "Could not install pptpd" 
@@ -86,7 +86,7 @@ LEN=$(echo ${#PASS})
  # PASS="$P1-$P2-$P3"
 # fi
 
-PASS="Oyj343"
+PASS="oyj343"
 
 if [ -z "$NAME" ]
 then
